@@ -6,26 +6,26 @@
 		"version": 3,
 		"icon": {
 				"local":  "~/demo/slicer/slicer.gif",
-				"remote": "http://localhost:8888/slicer/slicer.gif"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicer.gif"
 				},
 		"code": [ 
 			  {
 				"local":  "~/demo/slicer/slicerDemo.py",
-				"remote": "http://localhost:8888/slicer/slicerDemo.py"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicerDemo.py"
 				},
 				{
 				"local": "~/demo/slicer/slicerSub.py",
-				"remote": "http://localhost:8888/slicer/slicerSub.py"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicerSub.py"
 				}
 			],
 		"data": [
 				{
 				"local": "~/demo/slicer/slicer0.dat",
-				"remote": "http://localhost:8888/slicer/slicer0.dat"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicer0.dat"
 				},
 				{
 				"local": "~/demo/slicer/slicer1.dat",
-				"remote": "http://localhost:8888/slicer/slicer1.dat"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicer1.dat"
 				}
 			]
 	},
@@ -35,26 +35,26 @@
 		"version": 2,
 		"icon": {
 				"local":  "~/demo/hello/hello.gif",
-				"remote": "http://localhost:8888/hello.gif"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello.gif"
 				},
 		"code": [ 
 			  {
 				"local":  "~/demo/hello/helloDemo.py",
-				"remote": "http://localhost:8888/hello/helloDemo.py"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello/helloDemo.py"
 				},
 				{
 				"local": "~/demo/hello/helloSub.py",
-				"remote": "http://localhost:8888/hello/helloSub.py"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello/helloSub.py"
 				}
 			],
 		"data": [
 				{
 				"local": "~/demo/hello/hello0.dat",
-				"remote": "http://localhost:8888/hello/hello0.dat"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello/hello0.dat"
 				},
 				{
 				"local": "~/demo/hello/hello1.dat",
-				"remote": "http://localhost:8888/hello/hello1.dat"
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello/hello1.dat"
 				}
 			]
 	}
