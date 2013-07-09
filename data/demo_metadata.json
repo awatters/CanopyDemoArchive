@@ -1,0 +1,61 @@
+[
+
+	{
+		"Id": "slicer",
+		"Name": "Mayavi slicer demo",
+		"version": 3,
+		"icon": {
+				"local":  "~/demo/slicer/slicer.gif",
+				"remote": "http://localhost:8888/slicer/slicer.gif"
+				},
+		"code": [ 
+			  {
+				"local":  "~/demo/slicer/slicerDemo.py",
+				"remote": "http://localhost:8888/slicer/slicerDemo.py"
+				},
+				{
+				"local": "~/demo/slicer/slicerSub.py",
+				"remote": "http://localhost:8888/slicer/slicerSub.py"
+				}
+			],
+		"data": [
+				{
+				"local": "~/demo/slicer/slicer0.dat",
+				"remote": "http://localhost:8888/slicer/slicer0.dat"
+				},
+				{
+				"local": "~/demo/slicer/slicer1.dat",
+				"remote": "http://localhost:8888/slicer/slicer1.dat"
+				}
+			]
+	},
+	{
+		"Id": "hello",
+		"Name": "Hello world demo",
+		"version": 2,
+		"icon": {
+				"local":  "~/demo/hello/hello.gif",
+				"remote": "http://localhost:8888/hello.gif"
+				},
+		"code": [ 
+			  {
+				"local":  "~/demo/hello/helloDemo.py",
+				"remote": "http://localhost:8888/hello/helloDemo.py"
+				},
+				{
+				"local": "~/demo/hello/helloSub.py",
+				"remote": "http://localhost:8888/hello/helloSub.py"
+				}
+			],
+		"data": [
+				{
+				"local": "~/demo/hello/hello0.dat",
+				"remote": "http://localhost:8888/hello/hello0.dat"
+				},
+				{
+				"local": "~/demo/hello/hello1.dat",
+				"remote": "http://localhost:8888/hello/hello1.dat"
+				}
+			]
+	}
+]
