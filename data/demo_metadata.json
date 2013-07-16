@@ -6,29 +6,41 @@
 		"version": 3,
 		"tags": ["3d", "Geology", "Medical"],
 		"icon": {
-				"local":  "~/demo/slicer/slicer.gif",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicer.gif"
 				},
 		"code": [ 
 			  {
-				"local":  "~/demo/slicer/slicerDemo.py",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicerDemo.py"
 				},
 				{
-				"local": "~/demo/slicer/slicerSub.py",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicerSub.py"
 				}
 			],
 		"data": [
 				{
-				"local": "~/demo/slicer/slicer0.dat",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicer0.dat"
 				},
 				{
-				"local": "~/demo/slicer/slicer1.dat",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/slicer/slicer1.dat"
 				}
 			]
+	},
+	{
+		"Id": "helloImg",
+		"Name": "Hello image demo",
+		"tags": ["Medical"],
+		"version": 2,
+		"icon": {
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/helloImg/9.gif"
+				},
+		"code": [ 
+			  {
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/helloImg/helloImgDemo.py"
+				},
+				{
+				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/helloImg/skimpyGimpy.zip"
+				}
+			],
 	},
 	{
 		"Id": "hello",
@@ -36,26 +48,21 @@
 		"tags": ["Geology", "Medical"],
 		"version": 2,
 		"icon": {
-				"local":  "~/demo/hello/hello.gif",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello/hello.gif"
 				},
 		"code": [ 
 			  {
-				"local":  "~/demo/hello/helloDemo.py",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello/helloDemo.py"
 				},
 				{
-				"local": "~/demo/hello/helloSub.py",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello/helloSub.py"
 				}
 			],
 		"data": [
 				{
-				"local": "~/demo/hello/hello0.dat",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello/hello0.dat"
 				},
 				{
-				"local": "~/demo/hello/hello1.dat",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/hello/hello1.dat"
 				}
 			]
@@ -66,18 +73,15 @@
 		"Name": "Data file test",
 		"version": 2,
 		"icon": {
-				"local":  "~/demo/test1/11.gif",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/test1/11.gif"
 				},
 		"code": [ 
 			  {
-				"local":  "~/demo/hello/helloDemo.py",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/test1/test1Demo.py"
 				}
 			],
 		"data": [
 				{
-				"local": "~/demo/test1/speech.txt",
 				"remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/test1/speech.txt"
 				}
 			]
