@@ -16,7 +16,10 @@ c.addFont("propell", "fonts/mlmfonts/propell.bdf")
 c.setFont("propell", 2.0, 1.3)
 
 # draw some text
-c.addText(0,0, "Hello PNG World")
+#c.addText(0,0, "Hello PNG World")
+c.addText(0,60, "Hello")
+c.addText(0,30, "PNG")
+c.addText(0,0, "World")
 
 c.dumpToPNG("HelloWorld.png")
 
