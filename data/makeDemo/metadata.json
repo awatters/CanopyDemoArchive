@@ -1,0 +1,32 @@
+{
+    "code": [
+        {
+            "local": "skimpyGimpy.zip"
+        }, 
+        {
+            "local": "makeDemoDemo.py"
+        }, 
+        {
+            "local": "demoize.py"
+        }
+    ], 
+    "version": 1, 
+    "data": [
+        {
+            "local": "demoize.py~"
+        }, 
+        {
+            "local": "fonts.zip"
+        }, 
+        {
+            "local": "demoize.pyc"
+        }, 
+        {
+            "local": "makeDemoDemo.py~"
+        }
+    ], 
+    "Name": "Make Demo", 
+    "icon": {
+        "local": "icon.png"
+    }
+}
