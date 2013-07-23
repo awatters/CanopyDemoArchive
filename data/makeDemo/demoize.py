@@ -27,9 +27,9 @@ def install_demo(from_directory, demo_id, demo_name,
     return all_metadata
 
 def zip_up(directory_name, base_dir):
-    print "zip", (directory_name, base_dir)
+    #print "zip", (directory_name, base_dir)
     base_name = os.path.join(base_dir, directory_name)
-    print "zipping", directory_name, "in", base_dir, "to", base_name, ".zip"
+    #print "zipping", directory_name, "in", base_dir, "to", base_name, ".zip"
     return shutil.make_archive(base_name=base_name, 
                                format="zip", 
                                root_dir=base_dir,
@@ -48,7 +48,7 @@ def stage(demo_name, directory, staging_directory, version=1.0):
         (path, category, is_dir) = analysis[name]
         dest_path = os.path.join(staging_directory, name)
         if is_dir:
-            print "copytree", (path, dest_path)
+            #print "copytree", (path, dest_path)
             #os.mkdir(dest_path)
             shutil.copytree(path, dest_path)
             zip_up(name, staging_directory)
@@ -167,8 +167,8 @@ def make_icon(name, path, minlen=4, maxlen=12, maxheight=5, dy=30):
         word = word+" "
         while word:
             (chunk, word) = chunkword(word)
-            print (thisline, chunk, word)
-            print "chunk", (chunk, word, thisline, lineLen)
+            #print (thisline, chunk, word)
+            #print "chunk", (chunk, word, thisline, lineLen)
             if len(chunk)+len(thisline)>lineLen:
                 # emit thisline
                 padding = (lineLen-len(thisline))/2
@@ -183,14 +183,14 @@ def make_icon(name, path, minlen=4, maxlen=12, maxheight=5, dy=30):
                 # extend thisline
                 thisline = thisline+chunk
             if len(lines)>=maxheight:
-                print "break on maxheight", (len(lines), maxheight)
+                #print "break on maxheight", (len(lines), maxheight)
                 break
         if len(lines)>=maxheight:
             break
-    print "at termination", (thisline, chunk, word)
+    #print "at termination", (thisline, chunk, word)
     if len(lines)<maxheight and thisline:
         lines.append(thisline)
-    print "lines", lines
+    #print "lines", lines
     maxLineLen = max( map(len, lines) )
     height = len(lines)
     height = max( maxLineLen/2+1, height )
