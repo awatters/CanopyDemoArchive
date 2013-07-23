@@ -142,7 +142,79 @@ def archive_demo_metadata_locally(demo_id, tags=("General",)):
         json.dump(augmented_metadata, f, indent=4)
     return augmented_metadata
 
-def make_icon(name, topath):
+def make_icon(name, path, minlen=4, maxlen=12, maxheight=5, dy=30):
+    from skimpyGimpy import canvas
+    lines = []
+    words = name.split()
+    lineLen = max( map(len, words) ) + 1
+    lineLen = max( lineLen, len(name)/maxheight )
+    lineLen = max(lineLen, minlen)
+    lineLen = min(lineLen, maxlen)
+    lines = []
+    thisline = ""
+    def chunkword(word):
+        if len(word)>lineLen:
+            cut = min(lineLen-len(thisline), len(word)/2)
+        else:
+            cut = len(word)
+        cut = max(1, cut)
+        chunk = word[:cut]
+        word = word[cut:]
+        if word.strip():
+            chunk += "-"
+        return (chunk, word)
+    for word in words:
+        word = word+" "
+        while word:
+            (chunk, word) = chunkword(word)
+            print (thisline, chunk, word)
+            print "chunk", (chunk, word, thisline, lineLen)
+            if len(chunk)+len(thisline)>lineLen:
+                # emit thisline
+                padding = (lineLen-len(thisline))/2
+                thisline = " "*padding + thisline
+                lines.append(thisline)
+                # rechunk
+                thisline = ""
+                if chunk.endswith("-"):
+                    chunk = chunk[:-1]
+                word = (chunk+word).lstrip()
+            else:
+                # extend thisline
+                thisline = thisline+chunk
+            if len(lines)>=maxheight:
+                print "break on maxheight", (len(lines), maxheight)
+                break
+        if len(lines)>=maxheight:
+            break
+    print "at termination", (thisline, chunk, word)
+    if len(lines)<maxheight and thisline:
+        lines.append(thisline)
+    print "lines", lines
+    maxLineLen = max( map(len, lines) )
+    height = len(lines)
+    height = max( maxLineLen/2+1, height )
+    toppadding = int((( height - len(lines) ) * dy)/2.0)
+    maxy = (height*dy)
+    starty = maxy-toppadding
+    c = canvas.Canvas()
+    c.setColor(37,27,163)
+    c.setBackgroundColor(37,27,163)
+    c.addFont("propell", "fonts/mlmfonts/propell.bdf")
+    c.setFont("propell", 2.0, 1.3)
+    count = 0
+    y = starty
+    x = dy/2
+    testline = "*"*maxLineLen
+    c.addText(0,0, testline)
+    c.addText(0,maxy,testline)
+    c.setColor(233,233,255)
+    for line in lines:
+        c.addText(x,y,line)
+        y -= dy
+    c.dumpToPNG(path)
+
+def make_icon0(name, topath):
     from skimpyGimpy import canvas
     c = canvas.Canvas()
     c.setColor(10, 50, 10)
