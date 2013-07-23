@@ -77,8 +77,9 @@ class DirectoryEditorDemo ( HasTraits ):
             for t in s.split(','):
                 tags.append(t)
         for t in tags:
-            if len(t)<4:
-                self.error = 'Tag should be more than 3 letters long: '+repr(t)
+            if len(t)<2:
+                self.error = \
+                    'Tag names should be more than 1 letters long: '+repr(t)
                 return None
         return tags
 
@@ -127,7 +128,11 @@ class DirectoryEditorDemo ( HasTraits ):
                 if cat=="icon":
                     icon_found = True
             if not icon_found:
-                report.append("Icon file will be generated.")
+                report.append("WARNING: Icon file will be generated.")
+            demo_script_name = demo_id+"Demo.py"
+            if not demo_script_name in filenames:
+                report.append("WARNING: No %s default script found" %
+                              repr(demo_script_name))
             self.error = "\n".join(report)
             ok = True
         return (ok, dir_name, demo_tags, demo_name, demo_id, version)
