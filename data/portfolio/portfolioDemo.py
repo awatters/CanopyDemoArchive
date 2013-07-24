@@ -7,7 +7,7 @@ Note: This demo requires the latest versions of:
    enaml
    PyTables
 
-If if doesn't work, please update your installation
+If it doesn't work, please update your installation
 for those packages.
 """
 from portfolio import app

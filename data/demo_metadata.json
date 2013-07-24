@@ -2,7 +2,7 @@
     {
         "code": [
             {
-                "remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/canopy_demo/portfolio/portfolioDemo.py"
+                "remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/portfolio/portfolioDemo.py"
             },
             {
                 "remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/portfolio/portfolio.zip"
