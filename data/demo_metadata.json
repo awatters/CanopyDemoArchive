@@ -126,7 +126,7 @@
             "General"
         ],
         "downloaded": true,
-        "version": 1,
+        "version": 2,
         "data": [
             {
                 "remote": "https://raw.github.com/awatters/CanopyDemoArchive/master/data/makeDemo/fonts.zip"
