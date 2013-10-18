@@ -130,7 +130,8 @@ class DirectoryEditorDemo ( HasTraits ):
             if not icon_found:
                 report.append("WARNING: Icon file will be generated.")
             demo_script_name = demo_id+"Demo.py"
-            if not demo_script_name in filenames:
+            demo_notebook_name = demo_id+"Demo.ipynb"
+            if (not demo_script_name in filenames) and (not demo_notebook_name in filenames):
                 report.append("WARNING: No %s default script found" %
                               repr(demo_script_name))
             self.error = "\n".join(report)
